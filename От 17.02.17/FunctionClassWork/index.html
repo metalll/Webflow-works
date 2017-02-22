@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Math</title>
+</head>
+<body>
+<lable>Введите Х</lable>
+<br>
+<input type="text" id="text" style="margin-top: 20px">
+<br>
+<input type="button" onclick="mathclick()" value="Посчитать" style="margin-top: 20px">
+<br>
+<textarea id="textarea" style="margin-top: 20px">
+
+</textarea>
+
+
+<script>
+    function mathclick() {
+
+        var x = document.getElementById("text").value;
+        var result;
+        if(x != 0){
+            result = (Math.cos(x) - Math.cos(3 * x)) / x;
+
+        }
+        else result = 0;
+
+        var textarea = document.getElementById("textarea");
+        textarea.value = result;
+    }
+</script>
+
+
+
+
+</body>
+</html>

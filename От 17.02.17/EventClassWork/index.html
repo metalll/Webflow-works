@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251"/>
+    <title>Лабораторная работа №6</title>
+    <style> div {
+        font-size: 14px;
+        font-family: Tahoma;
+        color: red;
+        border: 1px solid #0000FF;
+        font-weight: bold;
+        width: 450px;
+        text-align: center;
+        height: 40px;
+        vertical-align: middle;
+        padding-top: 20px;
+        margin-bottom: 20px
+    } </style>
+    <script language="javascript" type="text/javascript">
+        function PrimerClik(event)
+    {
+        switch (event.button) {
+            case 0:
+                alert("Вы щелкнули левой кнопкой мыши!");
+                break;
+            case 1:
+                alert("Вы щелкнули средней кнопкой мыши!");
+                break;
+            case 2:
+                alert("Вы щелкнули правой кнопкой мыши!");
+                break;
+        }
+    }
+    function PrimerMove(ElementId)
+    {
+        var s = document.getElementById(ElementId).style.color;
+        if (document.getElementById(ElementId).style.color == '') s = 'red';
+        if (s == 'red') {
+            document.getElementById(ElementId).style.color = 'green';
+        } else {
+            document.getElementById(ElementId).style.color = 'red';
+        }
+    }   </script>
+</head>
+<body onLoad="alert('Запускается лабораторная работа №5');"
+      onUnload="alert('Вы закрыли лабораторную работу №5. Не забудьте сдать отчёт!!!');">
+<div onMouseDown="PrimerClik(event);">Щелкните любой кнопкой мыши по тексту и проверьте "onMouseDown"</div>
+<div onMouseUp="PrimerClik(event);">Щелкните любой кнопкой мыши по тексту и проверьте "onMouseUp"</div>
+<div id="MoveId" onMouseMove="PrimerMove('MoveId');">Наведите курсор на элемент и проверьте "onMouseMove"</div>
+<div id="MoveIdO" onMouseOver="PrimerMove('MoveIdO');">Наведите курсор на элемент и проверьте "onMouseOver"</div>
+<div id="MoveIdS" onMouseOut="PrimerMove('MoveIdS');">Наведите курсор на элемент и проверьте "onMouseOut"</div>
+<div id="MoveIdC" onclick="PrimerMove('MoveIdC');">Кликните на элементе и проверьте "onclick"</div>
+<div id="MoveIdDC" onDblClick="PrimerMove('MoveIdDC');">Кликните дважды на элементе и проверьте "onDblClick"</div>
+<div id="KeyPresElementId" style="padding-bottom:20px;"> Введите символы с клавиатуры и проверьте "onKeyPress"<br>
+
+
+    <input type="text" name="KeyPresElement" id="KeyPresElement" onKeyPress="PrimerMove('KeyPresElementId');"></div>
+<div id="KeyUpElementId" style="padding-bottom:20px;"> Введите симвалоы с клавиатуры и проверьте "onKeyUp"<br> <input
+        type="text" name="KeyUpElement" id="KeyUpElement" onKeyUp="PrimerMove('KeyUpElementId');"></div>
+<div id="KeyDownElementID" style="padding-bottom:20px;"> Введите символы с клавиатуры и проверьте "onKeyDown"<br> <input
+        type="text" name="KeyDownElement" id="KeyDownElement" onKeyDown="PrimerMove('KeyDownElementID');"></div>
+</body>
+</html>

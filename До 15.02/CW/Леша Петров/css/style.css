@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.header-cw {
+    width: 100%;
+    height: auto;
+    margin: 30px 0 0 20px;
+    display: inline-block;
+}
+
+.header-cw-photo {
+    float: left;
+}
+
+.header-cw-photo img {
+    width: 300px;
+    height: 400px;
+}
+
+.header-cw-content {
+    margin: 0 0 0 100px;
+    float: left;
+}
+
+.header-cw-content h1 {
+    margin: 0;
+}
+
+.header-cw-content ul {
+    margin-top: 100px;
+}
+
+.header-cw-content ul li b {
+    text-transform: uppercase;
+}
+
+.info-content {
+
+    display: block;
+}
+
+
+
+.info-content a {
+    color: tomato;
+    font-size: 40px;
+}
+
+.info-content a {
+    text-decoration: none;
+}
+
+.info-contentb a:visited {
+    color: tomato
+}
+
+.education-info {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.skill-content {
+    margin-top: 20px;
+    margin-left: 20px;
+}

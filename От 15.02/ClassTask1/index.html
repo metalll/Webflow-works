@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<input type="text" id="value"> <br>
+<input type="button" name="buttonOn" onclick="clickon()" value="Ok">
+
+<script type="text/javascript">
+    function clickon() {
+        var mass = new Array(4);
+
+    var value = document.getElementById("value").value;
+        var jj = value.length;
+        for(i = 0; i < 4; i++){
+            for(jj; jj > 0; jj--){
+                if(jj != ' '){
+                    mass[i] = value[jj];
+                }
+                else {
+                    continue;
+                }
+            }
+        }
+
+    //    var mass = new Array(10);
+//
+//
+    for (i = 0; i<10; i++){
+        if(i%5 != 0){
+            document.write(mass[i] + " ");
+        }
+        else {
+            document.write("<br />");
+            document.write(mass[i] + " ");
+        }
+    }
+    }
+</script>
+
+<script src="js/app.js" type="text/javascript"></script>
+</body>
+</html>

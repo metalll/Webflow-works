@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Elements</title>
+</head>
+<body>
+<style>
+    body input {
+        display: block;
+        width: 200px;
+        margin-top: 10px;
+    }
+
+    body ul {
+        list-style-type: none;
+        display: inline-block;
+    }
+
+    input[type="checkbox"]{
+        width: 15px;
+        display: inline-block;
+    }
+    input[type="radio"] {
+        display: inline-block;
+        width: 20px;
+    }
+</style>
+<form action="">
+    <input type="text" placeholder="Press any text" name="text">
+    <input type="password" placeholder="password" name="password">
+    <input type="date" name="date">
+    <input type="email" name="email" placeholder="Press your Email">
+    <input type="file" name="File" placeholder="Select your file" required>
+    <div class="select-checkbox">
+        <ul>
+            <li>Checkbox1  <input type="checkbox" name="checkbox" value="1"></li>
+            <li>Checkbox2  <input type="checkbox" name="checkbox" value="2"></li>
+            <li>Checkbox3   <input type="checkbox" name="checkbox" value="3"></li>
+        </ul>
+    </div>
+    <div class="select-radio">
+        <ul>
+            <li>Radio1<input type="radio" name="radio" value="radio1" checked></li>
+            <li>Radio2<input type="radio" name="radio" value="radio2"></li>
+            <li>Radio3<input type="radio" name="radio" value="radio3"></li>
+        </ul>
+    </div>
+    <input type="button" value="button">
+    <input type="submit" value="submit">
+</form>
+</body>
+</html>

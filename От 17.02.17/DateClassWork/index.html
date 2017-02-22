@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Date</title>
+</head>
+<body>
+<script>
+    var dateToMerryChristmas = new Date(2025,1,7);
+
+
+
+    var nowDate = new Date();
+
+
+
+    var Count = dateToMerryChristmas - nowDate;
+
+    Count /= 1000 * 60 * 60 * 24;
+    Count = Math.round(Count);
+
+    var maxDat = nowDate.getDay();
+    var finishCount = 0;
+    for(var i = 0; i < Count; i++){
+        maxDat = maxDat +1;
+        if(maxDat != 6 && maxDat != 7){
+            finishCount = finishCount +1;
+        }
+        else if(maxDat == 7){
+            maxDat = 0;
+        }
+
+    }
+
+    document.write(finishCount);
+
+</script>
+</body>
+</html>
